@@ -2,8 +2,10 @@ import React, {useEffect, useState} from "react";
 import {Container} from "react-bootstrap";
 import {Routes, Route, Link} from "react-router-dom";
 
+import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Catalog from "./Pages/Catalog";
+import Product from "./Pages/Product";
 
 const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzZhNTEwNzU5Yjk4YjAzOGY3NzlkMjAiLCJncm91cCI6Imdyb3VwLTciLCJpYXQiOjE2Njc5MTE5NTAsImV4cCI6MTY5OTQ0Nzk1MH0.A-txiDiqONEBOhOgawZTA5GmU6-Ct5Hk5XffHN1Gv6Y";
 
@@ -33,10 +35,7 @@ export default () => {
             })
     }, []);
     return <>
-        <header className="container-fluid">
-            <Link to="/">Главная</Link>
-            <Link to="Catalog">Каталог</Link>
-        </header>
+        <Header/>
         <main>
             {/* Col:
                 xs - сколько столбцов от 1 до 12  занимает элемент по ширине для мобильного устройства
@@ -63,10 +62,15 @@ export default () => {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/catalog" element={<Catalog goods={goods}/>}/>
+                    <Route path="/product/:id" element={<Product token={token}/>}></Route>
                 </Routes>
             </Container>
 
         </main>
-        <footer className="container-fluid">footer</footer>
+        <footer className="container-fluid d-flex align-items-center">
+            <Container >
+                ©2023 React Learning
+            </Container>
+        </footer>
     </>
 }
