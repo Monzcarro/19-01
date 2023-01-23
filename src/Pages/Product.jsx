@@ -99,7 +99,7 @@ const Product = ({token}) => {
                 <tbody>
                     {product.wight && <tr>
                         <th>Вес</th>
-                        <td>{product.wight} г</td>
+                        <td>{product.wight}</td>
                     </tr>}
                     {product.price && <tr>
                         <th>Цена</th>
@@ -107,7 +107,7 @@ const Product = ({token}) => {
                     </tr>}
                     {product.description && <tr>
                         <th>Польза</th>
-                        <td>{product.description} ₽</td>
+                        <td>{product.description}</td>
                     </tr>}
                 </tbody>
             </Table>

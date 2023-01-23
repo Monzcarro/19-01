@@ -13,7 +13,7 @@ let ads = [
         caption: "Ням-ням",
         text: "Лучшие лакомства для собак за полцены",
         bg: "violet",
-        pic: "https://avatars.dzeninfra.ru/get-zen_doc/3420563/pub_600975a9fc8f1029f73a84e7_60097652da2b0069732e0563/scale_1200"
+        pic: "https://i.imgur.com/PhJdhAr.png"
     },
     {
         caption: "Ням-ням",
@@ -25,19 +25,19 @@ let ads = [
         caption: "Ням-ням",
         text: "Лучшие лакомства для собак за полцены",
         bg: "springgreen",
-        pic: 'https://worlddogfinder.com/imager/1200x630/upload/articles/retriever_puppies_eating_food.png'
+        pic: 'https://i.imgur.com/CF5n7r7.png'
     },
     {
         caption: "Ням-ням",
         text: "Лучшие лакомства для собак за полцены",
         bg: "violet",
-        pic: "https://tisi.by/assets/images/news/tisi_animal_feed.png"
+        pic: "https://i.imgur.com/VqhnXWB.png"
     },
     {
         caption: "Ням-ням",
         text: "Лучшие лакомства для собак за полцены",
         bg: "lightblue",
-        pic: "https://parnasvet.ru/wp-content/uploads/2021/06/kak-vybrat-sobaku.png"
+        pic: "https://i.imgur.com/JjvK1jG.png"
     },
 ];
 

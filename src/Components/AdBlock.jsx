@@ -6,7 +6,8 @@ const Block = ({pic, bg, caption, text}) => {
     let style = {
         backgroundImage: "url(https://abrakadabra.fun/uploads/posts/2022-01/1643130833_19-abrakadabra-fun-p-pattern-lapki-41.png)",
         backgroundSize: "auto 200%",
-        backgroundColor: bg
+        backgroundColor: bg,
+        borderRadius: "20px"
     };
     return <Row style={style}>
         <Col xs={8}>
