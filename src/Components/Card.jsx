@@ -10,7 +10,7 @@ const MyCard = (props) => {
     }
 
     return <Card className="h-100" onClick={handler}>
-        <Card.Img src={props.pictures} height="100" className="w-auto"></Card.Img>
+        <Card.Img src={props.pictures} className="h-75"></Card.Img>
         <Card.Body>
             <Card.Title>{props.name}</Card.Title>
             <Card.Text>{props.description.slice(0, 11)}...</Card.Text>

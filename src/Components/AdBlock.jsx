@@ -4,18 +4,18 @@ import {Row, Col} from "react-bootstrap";
 // props.pic, bg, caption, text ===> 
 const Block = ({pic, bg, caption, text}) => {
     let style = {
-        backgroundImage: "url(https://abrakadabra.fun/uploads/posts/2022-01/1643130833_19-abrakadabra-fun-p-pattern-lapki-41.png)",
-        backgroundSize: "auto 200%",
+        backgroundImage: "url(https://cdn.breedadvisor.com/wp-content/uploads/2019/11/jump-to-background.png)",
+        backgroundSize: "auto 300%",
         backgroundColor: bg,
-        borderRadius: "20px"
+        borderRadius: "20px",
     };
     return <Row style={style}>
-        <Col xs={8}>
+        <Col xs={8} className="py-3">
             <h3>{caption}</h3>
             <p>{text}</p>
         </Col>
         <Col>
-            <img src={pic} alt={caption} className="card-image"/>
+            <img src={pic} alt={caption} className="card-image py-3"/>
         </Col>
     </Row>
 }
